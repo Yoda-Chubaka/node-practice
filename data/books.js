@@ -1,4 +1,4 @@
-[
+module.exports = [
         {
             "isbn":"9781593279509",
             "title":"Eloquent JavaScript, Third Edition",

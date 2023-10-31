@@ -1,12 +1,12 @@
-const express = require('express');
+const express = require("express");
+const cors = require("cors");
 
-const books = require("./books");
+const booksRouter = require("./routes/api/books");
 
 const app = express();
 
-app.get('/books', (req, res) => {
-  res.send(books);
-});
+app.use(cors());
+
+app.use("/api/books", booksRouter);
 
 app.listen(4000);
-
